@@ -171,7 +171,7 @@ class Tweet_Widget extends WP_Widget
         // code..
         $tweets = get_option("james_tweets_".$widget_id);
         // var_dump($tweets);
-        if(empty($tweets) || empty($tweets['james_tweets'])){
+        if( time() > $tweets['tweets_updated_time'] || empty($tweets['james_tweets'])){
          if(empty($this->james_tweets_lib) || $this->james_tweets_lib == ""):
             $this->init_twitter_api_lib($instance);
         endif;
