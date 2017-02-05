@@ -1,0 +1,15 @@
+{
+    "name": "cleancoded/twitterfeed",
+    "description": "James Twitter Feed",
+    "type": "php",
+    "require": {
+        "abraham/twitteroauth": "^0.7.2"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "James",
+            "email": "james@cleancoded.com"
+        }
+    ]
+}
